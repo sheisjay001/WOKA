@@ -1,5 +1,5 @@
 <?php
-require_once 'db.php';
+require_once 'api/db.php';
 
 // Read JSON data
 $jsonData = file_get_contents(__DIR__ . '/data/health_data.json');

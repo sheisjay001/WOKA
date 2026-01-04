@@ -267,13 +267,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <i class="fas fa-sliders-h mr-2"></i> Customize Plan
                     </h2>
                     
-                    <form id="health-form" action="/" method="POST" class="space-y-6">
+                    <form id="health-form" action="" method="POST" class="space-y-6">
                         <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">
                         
                         <!-- Visual Continent Selector -->
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Select Region</label>
-                            <div class="grid grid-cols-2 gap-3 max-h-60 overflow-y-auto scrollbar-hide">
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                 <?php foreach ($continents as $continent): 
                                     $icon = $continentIcons[$continent] ?? 'fa-globe';
                                 ?>
@@ -367,7 +367,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>&copy; <?= date('Y') ?> WOKA Health. All rights reserved.</p>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
     <?php if ($resultData): ?>
     <script>
         // Init chart if loaded via PHP
