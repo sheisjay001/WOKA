@@ -152,48 +152,334 @@
         }
     },
     "jobs": {
-        "Sedentary": {
-            "examples": ["Office Worker", "Software Developer", "Driver", "Cashier", "Receptionist"],
-            "description": "Jobs that involve sitting for long periods.",
-            "health_risks": ["Back pain", "Eye strain", "Weight gain", "Poor circulation"],
+        "Software Developer": {
+            "examples": ["Remote", "Onsite", "Freelance"],
+            "description": "Prolonged sitting, high screen time, mental focus.",
+            "health_risks": ["Back pain", "Eye strain", "Carpal tunnel", "Vitamin D deficiency"],
             "recommendations": {
-                "exercise": "30-45 minutes of cardio daily (walking, jogging). Stand up and stretch every hour.",
-                "sleep": "7-8 hours. Avoid screens 1 hour before bed.",
-                "diet_focus": "Low calorie density. High fiber to aid digestion. Drink plenty of water to avoid snacking.",
-                "fruit_intake": "2-3 servings daily, preferably as snacks instead of processed food."
+                "exercise": "30-45 minutes of cardio daily. Hourly standing breaks. Wrist exercises.",
+                "sleep": "7-8 hours. Blue light filters recommended.",
+                "diet_focus": "Brain foods (Omega-3s). Low-sugar snacks to prevent crashes.",
+                "fruit_intake": "Berries and citrus for eye health."
             }
         },
-        "Active": {
-            "examples": ["Construction Worker", "Farmer", "Athlete", "Warehouse Worker", "Landscaper"],
-            "description": "Jobs that require significant physical effort.",
-            "health_risks": ["Joint pain", "Dehydration", "Physical exhaustion", "Injury"],
+        "Civil Servant": {
+            "examples": ["Office Clerk", "Administrator", "Policy Analyst"],
+            "description": "Mostly sedentary office work, regular hours.",
+            "health_risks": ["Sedentary lifestyle risks", "Posture issues", "Stress"],
             "recommendations": {
-                "exercise": "Focus on core strengthening and flexibility (Yoga/Pilates) to prevent injury. Rest days are crucial.",
-                "sleep": "8-9 hours to allow muscle recovery.",
-                "diet_focus": "High protein for muscle repair. Complex carbohydrates for sustained energy. Electrolyte-rich fluids.",
-                "fruit_intake": "3-4 servings daily, specifically those high in potassium (e.g., Bananas) for muscle function."
+                "exercise": "Walk during lunch breaks. Desk stretches.",
+                "sleep": "7-8 hours consistent schedule.",
+                "diet_focus": "Balanced meals. Avoid vending machine snacks.",
+                "fruit_intake": "Apples or pears as mid-day snacks."
             }
         },
-        "Shift Work": {
-            "examples": ["Nurse", "Doctor", "Security Guard", "Factory Worker", "Pilot"],
-            "description": "Jobs with irregular hours or night shifts.",
-            "health_risks": ["Sleep disorders", "Digestive issues", "Chronic fatigue", "Vitamin D deficiency"],
+        "Nurse": {
+            "examples": ["Registered Nurse", "ER Nurse", "Home Care"],
+            "description": "Long shifts, standing, physical patient handling, high stress.",
+            "health_risks": ["Varicose veins", "Back injury", "Burnout", "Sleep deprivation"],
             "recommendations": {
-                "exercise": "Light to moderate exercise before shift to boost alertness. Cardio on off days.",
-                "sleep": "Use blackout curtains and earplugs. Try to keep a consistent schedule even on off days if possible.",
-                "diet_focus": "Small, frequent meals rather than one large meal. Avoid heavy, greasy foods during night shifts.",
-                "fruit_intake": "Citrus fruits for alertness and immunity."
+                "exercise": "Core strengthening for back support. Yoga for relaxation.",
+                "sleep": "Prioritize sleep hygiene, especially between shifts.",
+                "diet_focus": "High energy, easily digestible meals. Hydration is key.",
+                "fruit_intake": "Bananas for potassium (muscle function)."
             }
         },
-        "High Stress": {
-            "examples": ["Executive", "Teacher", "Stock Trader", "Emergency Responder"],
-            "description": "Jobs with high mental pressure.",
-            "health_risks": ["Hypertension", "Anxiety", "Heart issues", "Insomnia"],
+        "Doctor": {
+            "examples": ["Surgeon", "GP", "Specialist"],
+            "description": "High stress, long hours, decision fatigue.",
+            "health_risks": ["Chronic stress", "Hypertension", "Insomnia"],
             "recommendations": {
-                "exercise": "Stress-busting activities like Boxing, Running, or calming ones like Yoga/Meditation.",
-                "sleep": "7-8 hours. Meditation before sleep is highly recommended.",
-                "diet_focus": "Foods rich in Omega-3 (fish, nuts) for brain health. Avoid excessive caffeine.",
-                "fruit_intake": "Berries (Blueberries, Strawberries) which are high in antioxidants to combat stress."
+                "exercise": "Moderate cardio to manage stress. Meditation.",
+                "sleep": "Maximize quality of sleep when possible.",
+                "diet_focus": "Heart-healthy diet. Avoid excessive caffeine.",
+                "fruit_intake": "Antioxidant-rich fruits like blueberries."
+            }
+        },
+        "Teacher": {
+            "examples": ["K-12", "Professor", "Tutor"],
+            "description": "Standing, vocal strain, mental stress.",
+            "health_risks": ["Varicose veins", "Voice loss", "Stress"],
+            "recommendations": {
+                "exercise": "Walking or swimming. Leg elevation after work.",
+                "sleep": "7-8 hours for mental recovery.",
+                "diet_focus": "Hydrating foods. Honey/Lemon for voice.",
+                "fruit_intake": "Watermelon or citrus for hydration."
+            }
+        },
+        "Construction Worker": {
+            "examples": ["Builder", "Laborer", "Site Manager"],
+            "description": "Heavy lifting, outdoor exposure, physical exertion.",
+            "health_risks": ["Joint injury", "Dehydration", "Sun damage", "Hearing loss"],
+            "recommendations": {
+                "exercise": "Stretching and flexibility focus. Rest days are vital.",
+                "sleep": "8-9 hours for physical repair.",
+                "diet_focus": "High protein and complex carbs. Electrolytes.",
+                "fruit_intake": "Oranges and hydrating fruits."
+            }
+        },
+        "Driver": {
+            "examples": ["Truck Driver", "Taxi/Uber", "Bus Driver"],
+            "description": "Prolonged sitting, vibration, irregular meals.",
+            "health_risks": ["Back pain", "Obesity", "Hypertension", "Fatigue"],
+            "recommendations": {
+                "exercise": "Walk vigorously during stops. Core exercises.",
+                "sleep": "Strict rest schedule to ensure alertness.",
+                "diet_focus": "Light meals to avoid drowsiness. Healthy snacks.",
+                "fruit_intake": "Apples (easy to eat on the go)."
+            }
+        },
+        "Chef": {
+            "examples": ["Head Chef", "Line Cook", "Baker"],
+            "description": "Long standing, heat exposure, high pressure.",
+            "health_risks": ["Varicose veins", "Burns", "Back pain", "Stress"],
+            "recommendations": {
+                "exercise": "Leg and back strengthening. Foot massage.",
+                "sleep": "Cool environment to counter heat exposure.",
+                "diet_focus": "Stay hydrated. Eat sitting down when possible.",
+                "fruit_intake": "Refreshing fruits like pineapple or melon."
+            }
+        },
+        "Accountant": {
+            "examples": ["Auditor", "Tax Consultant", "Bookkeeper"],
+            "description": "Sedentary, high focus, seasonal stress peaks.",
+            "health_risks": ["Eye strain", "Neck pain", "Stress"],
+            "recommendations": {
+                "exercise": "Upper body stretches. Eye yoga.",
+                "sleep": "Regular schedule.",
+                "diet_focus": "Omega-3s for concentration.",
+                "fruit_intake": "Berries."
+            }
+        },
+        "Police Officer": {
+            "examples": ["Patrol", "Detective", "Traffic"],
+            "description": "Mix of sedentary (patrol/paperwork) and sudden high activity. Shift work.",
+            "health_risks": ["Cardiovascular issues", "PTSD", "Sleep disorders"],
+            "recommendations": {
+                "exercise": "Mix of cardio and strength training.",
+                "sleep": "Blackout curtains for shift sleeping.",
+                "diet_focus": "Low sodium, heart-healthy.",
+                "fruit_intake": "Potassium-rich fruits."
+            }
+        },
+        "Farmer": {
+            "examples": ["Crop Farmer", "Livestock", "Agricultural Worker"],
+            "description": "Physical labor, chemical exposure, outdoor.",
+            "health_risks": ["Skin cancer", "Respiratory issues", "Back pain"],
+            "recommendations": {
+                "exercise": "Core stability to protect back.",
+                "sleep": "Early to bed, early to rise.",
+                "diet_focus": "Hearty, nutrient-dense meals.",
+                "fruit_intake": "Seasonal farm-fresh fruits."
+            }
+        },
+        "Pilot": {
+            "examples": ["Commercial", "Cargo", "Private"],
+            "description": "Sedentary, radiation exposure, jet lag.",
+            "health_risks": ["DVT", "Circadian rhythm disruption", "Dehydration"],
+            "recommendations": {
+                "exercise": "In-flight stretches. Cardio during layovers.",
+                "sleep": "Melatonin management (consult doctor).",
+                "diet_focus": "High antioxidant foods.",
+                "fruit_intake": "Hydrating fruits."
+            }
+        },
+        "Graphic Designer": {
+            "examples": ["UI/UX", "Illustrator", "Art Director"],
+            "description": "Prolonged sitting, screen focus, creative stress.",
+            "health_risks": ["RSI (Repetitive Strain Injury)", "Eye strain"],
+            "recommendations": {
+                "exercise": "Hand and wrist exercises. Posture checks.",
+                "sleep": "7-8 hours.",
+                "diet_focus": "Foods rich in Vitamin A and C.",
+                "fruit_intake": "Carrots (or fruits like Mango/Papaya)."
+            }
+        },
+        "Lawyer": {
+            "examples": ["Corporate", "Litigation", "Paralegal"],
+            "description": "High stress, long hours, sedentary.",
+            "health_risks": ["Anxiety", "Hypertension", "Substance overuse (caffeine)"],
+            "recommendations": {
+                "exercise": "Stress-relief cardio (Running/Boxing).",
+                "sleep": "Prioritize wind-down routine.",
+                "diet_focus": "Limit caffeine/alcohol. Whole foods.",
+                "fruit_intake": "Stress-busting berries."
+            }
+        },
+        "Electrician": {
+            "examples": ["Residential", "Commercial", "Lineman"],
+            "description": "Active, climbing, fine motor skills.",
+            "health_risks": ["Electric shock", "Falls", "Musculoskeletal strain"],
+            "recommendations": {
+                "exercise": "Balance and flexibility training.",
+                "sleep": "8 hours.",
+                "diet_focus": "Protein for repair.",
+                "fruit_intake": "Bananas."
+            }
+        },
+        "Factory Worker": {
+            "examples": ["Assembly Line", "Quality Control", "Machinist"],
+            "description": "Repetitive motion, standing, shift work.",
+            "health_risks": ["RSI", "Varicose veins", "Noise-induced hearing loss"],
+            "recommendations": {
+                "exercise": "Reverse stretches for repetitive motions.",
+                "sleep": "Quality sleep for alertness.",
+                "diet_focus": "Anti-inflammatory foods.",
+                "fruit_intake": "Cherries (anti-inflammatory)."
+            }
+        },
+        "Receptionist": {
+            "examples": ["Front Desk", "Concierge"],
+            "description": "Sedentary, social interaction fatigue.",
+            "health_risks": ["Back pain", "Sedentary risks"],
+            "recommendations": {
+                "exercise": "Stand whenever possible. Walk at lunch.",
+                "sleep": "7-8 hours.",
+                "diet_focus": "Light meals.",
+                "fruit_intake": "Grapes/Berries."
+            }
+        },
+        "Writer": {
+            "examples": ["Copywriter", "Author", "Journalist"],
+            "description": "Sedentary, isolation, deadline stress.",
+            "health_risks": ["Carpal tunnel", "Depression/Anxiety", "Back pain"],
+            "recommendations": {
+                "exercise": "Social group exercise classes.",
+                "sleep": "Regular routine.",
+                "diet_focus": "Mood-boosting foods (Dark chocolate, seeds).",
+                "fruit_intake": "Bananas."
+            }
+        },
+        "Sales Representative": {
+            "examples": ["Retail", "B2B", "Real Estate"],
+            "description": "Variable (standing or driving), high stress.",
+            "health_risks": ["Stress", "Leg pain (if retail)", "Poor diet (on road)"],
+            "recommendations": {
+                "exercise": "Cardio for endurance.",
+                "sleep": "7-8 hours.",
+                "diet_focus": "Meal prep to avoid fast food.",
+                "fruit_intake": "Portable fruits like Apples."
+            }
+        },
+        "Student": {
+            "examples": ["University", "High School", "Researcher"],
+            "description": "Sedentary, erratic sleep, exam stress.",
+            "health_risks": ["Poor posture", "Sleep deprivation", "Eye strain"],
+            "recommendations": {
+                "exercise": "Intramural sports or gym.",
+                "sleep": "Avoid all-nighters.",
+                "diet_focus": "Brain food, limit ramen/processed food.",
+                "fruit_intake": "Oranges (Vitamin C)."
+            }
+        },
+        "Security Guard": {
+            "examples": ["Night Watch", "Bouncer", "Mall Security"],
+            "description": "Standing or sitting, shift work, boredom/alertness cycles.",
+            "health_risks": ["Sleep disorders", "Varicose veins", "Weight gain"],
+            "recommendations": {
+                "exercise": "Bodyweight exercises during breaks.",
+                "sleep": "Blackout curtains.",
+                "diet_focus": "High protein, low carb at night.",
+                "fruit_intake": "Apples."
+            }
+        },
+        "Cleaner": {
+            "examples": ["Janitor", "Housekeeper", "Industrial Cleaner"],
+            "description": "Active, chemical exposure, repetitive motion.",
+            "health_risks": ["Skin irritation", "Respiratory issues", "Back pain"],
+            "recommendations": {
+                "exercise": "Core strength.",
+                "sleep": "8 hours.",
+                "diet_focus": "Detoxifying foods (cruciferous veggies).",
+                "fruit_intake": "Citrus fruits."
+            }
+        },
+        "Engineer": {
+            "examples": ["Mechanical", "Civil", "Electrical"],
+            "description": "Mix of office and site work.",
+            "health_risks": ["Stress", "Sedentary/Active mix risks"],
+            "recommendations": {
+                "exercise": "Balanced routine.",
+                "sleep": "7-8 hours.",
+                "diet_focus": "Balanced diet.",
+                "fruit_intake": "Any fresh fruit."
+            }
+        },
+        "Human Resources": {
+            "examples": ["HR Manager", "Recruiter"],
+            "description": "Sedentary, emotional labor.",
+            "health_risks": ["Burnout", "Sedentary risks"],
+            "recommendations": {
+                "exercise": "Group activities.",
+                "sleep": "7-8 hours.",
+                "diet_focus": "Comforting but healthy foods.",
+                "fruit_intake": "Berries."
+            }
+        },
+        "Data Analyst": {
+            "examples": ["Data Scientist", "Business Analyst"],
+            "description": "Highly sedentary, screen focus.",
+            "health_risks": ["Eye strain", "Back pain"],
+            "recommendations": {
+                "exercise": "Posture exercises.",
+                "sleep": "Rest eyes.",
+                "diet_focus": "Brain foods.",
+                "fruit_intake": "Blueberries."
+            }
+        },
+        "Virtual Assistant": {
+            "examples": ["Remote Admin", "Social Media Manager"],
+            "description": "Remote, sedentary, isolation.",
+            "health_risks": ["Sedentary risks", "Loneliness"],
+            "recommendations": {
+                "exercise": "Outdoor walks.",
+                "sleep": "Regular schedule.",
+                "diet_focus": "Healthy snacks.",
+                "fruit_intake": "Oranges."
+            }
+        },
+        "Plumber": {
+            "examples": ["Residential", "Industrial"],
+            "description": "Active, confined spaces, heavy lifting.",
+            "health_risks": ["Knee injury", "Back pain", "Infection risk"],
+            "recommendations": {
+                "exercise": "Knee strengthening. Flexibility.",
+                "sleep": "8 hours.",
+                "diet_focus": "Immune-boosting foods.",
+                "fruit_intake": "Vitamin C rich fruits."
+            }
+        },
+        "Artist": {
+            "examples": ["Painter", "Sculptor", "Digital Artist"],
+            "description": "Sedentary or standing, repetitive motion, fumes.",
+            "health_risks": ["RSI", "Chemical exposure", "Eye strain"],
+            "recommendations": {
+                "exercise": "Hand stretches. Yoga.",
+                "sleep": "7-8 hours.",
+                "diet_focus": "Antioxidants.",
+                "fruit_intake": "Berries."
+            }
+        },
+        "Musician": {
+            "examples": ["Performer", "Teacher", "Composer"],
+            "description": "Repetitive motion, hearing risk, irregular hours.",
+            "health_risks": ["Hearing loss", "RSI", "Sleep disruption"],
+            "recommendations": {
+                "exercise": "Hearing protection. Posture work.",
+                "sleep": "Nap when possible.",
+                "diet_focus": "Energy sustaining foods.",
+                "fruit_intake": "Bananas."
+            }
+        },
+        "Athlete": {
+            "examples": ["Professional", "Coach", "Trainer"],
+            "description": "Extreme physical exertion, injury risk.",
+            "health_risks": ["Injury", "Overtraining", "Burnout"],
+            "recommendations": {
+                "exercise": "Recovery focus.",
+                "sleep": "9-10 hours.",
+                "diet_focus": "Performance nutrition.",
+                "fruit_intake": "High carb fruits (Bananas, Dates)."
             }
         }
     }
