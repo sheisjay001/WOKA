@@ -68,6 +68,9 @@ session_start();
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-12 flex-grow">
         <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 md:p-12 animate-fade-in">
+            <a href="/" class="inline-flex items-center text-teal-600 hover:text-teal-800 dark:text-teal-400 dark:hover:text-teal-300 transition-colors mb-6">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Homepage
+            </a>
             <h1 class="text-4xl font-bold text-teal-700 dark:text-teal-400 mb-6 text-center">About WOKA</h1>
             
             <div class="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
