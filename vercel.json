@@ -10,6 +10,14 @@
             "dest": "/assets/$1"
         },
         {
+            "src": "/about",
+            "dest": "/api/about.php"
+        },
+        {
+            "src": "/contact",
+            "dest": "/api/contact.php"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }

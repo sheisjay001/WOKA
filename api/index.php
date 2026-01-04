@@ -227,8 +227,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <i class="fas fa-bars text-xl"></i>
                 </button>
                 <div class="hidden md:flex space-x-6 items-center">
-                    <a href="#" class="hover:text-teal-200 transition-colors font-medium">About</a>
-                    <a href="#" class="hover:text-teal-200 transition-colors font-medium">Contact</a>
+                    <a href="/about" class="hover:text-teal-200 transition-colors font-medium">About</a>
+                    <a href="/contact" class="hover:text-teal-200 transition-colors font-medium">Contact</a>
                 </div>
                 <button id="theme-toggle" type="button" class="text-white hover:bg-teal-700/50 rounded-full p-2 transition-all transform hover:scale-110">
                     <i id="theme-toggle-dark-icon" class="fas fa-moon hidden"></i>
@@ -238,8 +238,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-teal-700 dark:bg-teal-800 pb-4 px-6">
-            <a href="#" class="block py-2 hover:text-teal-200">About</a>
-            <a href="#" class="block py-2 hover:text-teal-200">Contact</a>
+            <a href="/about" class="block py-2 hover:text-teal-200">About</a>
+            <a href="/contact" class="block py-2 hover:text-teal-200">Contact</a>
         </div>
     </nav>
 
