@@ -72,7 +72,7 @@ session_start();
             
             <div class="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                 <p>
-                    <strong class="text-teal-600 dark:text-teal-400">WOKA</strong> stands for <span class="italic">World Class Health</span>. We are dedicated to providing personalized health and wellness recommendations tailored to the unique needs of workers worldwide.
+                    <strong class="text-teal-600 dark:text-teal-400">WOKA</strong> stands for <span class="italic">Worker</span>. We are dedicated to providing personalized health and wellness recommendations tailored to the unique needs of workers worldwide.
                 </p>
                 <p>
                     Understanding that a software engineer in Tokyo has different health challenges than a construction worker in New York, WOKA bridges the gap between professional lifestyle and personal well-being.
