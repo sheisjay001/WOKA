@@ -1,4 +1,4 @@
-db.php
+db_local.php
 node_modules/
 .DS_Store
 .vscode/
