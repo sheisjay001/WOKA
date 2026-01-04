@@ -218,7 +218,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Navbar -->
     <nav class="bg-teal-600 dark:bg-teal-900 text-white shadow-lg sticky top-0 z-50 transition-colors duration-200 backdrop-blur-sm bg-opacity-95">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.php" class="text-2xl font-bold flex items-center gap-2 tracking-tight">
+            <a href="/" class="text-2xl font-bold flex items-center gap-2 tracking-tight">
                 <i class="fas fa-heartbeat animate-pulse"></i> WOKA
             </a>
             <div class="flex items-center gap-6">
@@ -267,7 +267,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <i class="fas fa-sliders-h mr-2"></i> Customize Plan
                     </h2>
                     
-                    <form id="health-form" action="index.php" method="POST" class="space-y-6">
+                    <form id="health-form" action="/" method="POST" class="space-y-6">
                         <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">
                         
                         <!-- Visual Continent Selector -->

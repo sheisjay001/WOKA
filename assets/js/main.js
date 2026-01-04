@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Fetch
             const formData = new FormData(healthForm);
             
-            fetch('index.php', {
+            fetch('/', {
                 method: 'POST',
                 body: formData,
                 headers: {
