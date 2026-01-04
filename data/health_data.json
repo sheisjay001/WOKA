@@ -1,0 +1,200 @@
+{
+    "continents": {
+        "Africa": {
+            "countries": ["Nigeria", "Kenya", "South Africa", "Ghana", "Egypt", "Ethiopia"],
+            "meals": [
+                {
+                    "name": "Jollof Rice with Grilled Chicken",
+                    "ingredients": ["Rice", "Tomatoes", "Peppers", "Chicken", "Onions"],
+                    "benefits": "Provides carbohydrates for energy and protein for muscle repair.",
+                    "type": "Lunch/Dinner"
+                },
+                {
+                    "name": "Yam and Garden Egg Sauce",
+                    "ingredients": ["Yam", "Garden Eggs", "Palm Oil", "Fish"],
+                    "benefits": "Good source of energy and vitamins.",
+                    "type": "Breakfast/Lunch"
+                },
+                {
+                    "name": "Beans and Plantain",
+                    "ingredients": ["Beans", "Plantain", "Palm Oil"],
+                    "benefits": "High fiber and protein content, good for sustained energy.",
+                    "type": "Lunch"
+                },
+                {
+                    "name": "Sukuma Wiki and Ugali",
+                    "ingredients": ["Collard Greens", "Maize Flour", "Tomatoes"],
+                    "benefits": "Rich in iron and vitamins.",
+                    "type": "Dinner"
+                }
+            ],
+            "local_fruits": ["Mango", "Papaya", "Pineapple", "Guava", "Watermelon", "Baobab Fruit"]
+        },
+        "Europe": {
+            "countries": ["United Kingdom", "France", "Germany", "Italy", "Spain", "Sweden"],
+            "meals": [
+                {
+                    "name": "Mediterranean Salad with Grilled Fish",
+                    "ingredients": ["Olive Oil", "Tomatoes", "Cucumber", "Feta Cheese", "Fish"],
+                    "benefits": "Heart-healthy fats and lean protein.",
+                    "type": "Lunch"
+                },
+                {
+                    "name": "Oatmeal with Berries",
+                    "ingredients": ["Oats", "Milk/Water", "Berries", "Honey"],
+                    "benefits": "High fiber for digestion and antioxidants.",
+                    "type": "Breakfast"
+                },
+                {
+                    "name": "Vegetable Stew with Whole Grain Bread",
+                    "ingredients": ["Potatoes", "Carrots", "Onions", "Whole Grain Bread"],
+                    "benefits": "Comforting and nutrient-dense.",
+                    "type": "Dinner"
+                }
+            ],
+            "local_fruits": ["Apple", "Pear", "Berries", "Grapes", "Orange", "Plum"]
+        },
+        "Asia": {
+            "countries": ["China", "India", "Japan", "Thailand", "Vietnam", "Indonesia"],
+            "meals": [
+                {
+                    "name": "Stir-fried Tofu with Vegetables",
+                    "ingredients": ["Tofu", "Broccoli", "Carrots", "Soy Sauce", "Rice"],
+                    "benefits": "Plant-based protein and essential vitamins.",
+                    "type": "Dinner"
+                },
+                {
+                    "name": "Dal (Lentil Soup) with Roti",
+                    "ingredients": ["Lentils", "Spices", "Wheat Flour"],
+                    "benefits": "High protein and fiber.",
+                    "type": "Lunch"
+                },
+                {
+                    "name": "Miso Soup and Grilled Salmon",
+                    "ingredients": ["Miso Paste", "Salmon", "Seaweed", "Tofu"],
+                    "benefits": "Omega-3 fatty acids and probiotics.",
+                    "type": "Breakfast/Dinner"
+                }
+            ],
+            "local_fruits": ["Banana", "Lychee", "Durian", "Mango", "Dragon Fruit", "Rambutan"]
+        },
+        "North America": {
+            "countries": ["USA", "Canada", "Mexico"],
+            "meals": [
+                {
+                    "name": "Grilled Chicken Salad",
+                    "ingredients": ["Chicken Breast", "Lettuce", "Tomatoes", "Avocado", "Vinaigrette"],
+                    "benefits": "Lean protein and healthy fats.",
+                    "type": "Lunch"
+                },
+                {
+                    "name": "Quinoa Bowl with Black Beans",
+                    "ingredients": ["Quinoa", "Black Beans", "Corn", "Salsa"],
+                    "benefits": "Complete protein vegetarian meal.",
+                    "type": "Dinner"
+                },
+                {
+                    "name": "Avocado Toast with Poached Egg",
+                    "ingredients": ["Whole Wheat Bread", "Avocado", "Egg"],
+                    "benefits": "Good fats and protein.",
+                    "type": "Breakfast"
+                }
+            ],
+            "local_fruits": ["Blueberry", "Cranberry", "Apple", "Orange", "Peach", "Avocado"]
+        },
+        "South America": {
+            "countries": ["Brazil", "Argentina", "Colombia", "Peru", "Chile"],
+            "meals": [
+                {
+                    "name": "Feijoada (Black Bean Stew)",
+                    "ingredients": ["Black Beans", "Pork/Beef", "Rice", "Kale"],
+                    "benefits": "Iron-rich and high protein.",
+                    "type": "Lunch"
+                },
+                {
+                    "name": "Ceviche",
+                    "ingredients": ["Raw Fish", "Lime Juice", "Onions", "Cilantro"],
+                    "benefits": "Fresh lean protein.",
+                    "type": "Lunch"
+                },
+                {
+                    "name": "Arepas with Cheese and Avocado",
+                    "ingredients": ["Cornmeal", "Cheese", "Avocado"],
+                    "benefits": "Gluten-free energy source.",
+                    "type": "Breakfast"
+                }
+            ],
+            "local_fruits": ["Acai", "Passion Fruit", "Guava", "Papaya", "Mango"]
+        },
+        "Oceania": {
+            "countries": ["Australia", "New Zealand", "Fiji", "Papua New Guinea"],
+            "meals": [
+                {
+                    "name": "Grilled Barramundi with Salad",
+                    "ingredients": ["Barramundi Fish", "Leafy Greens", "Lemon"],
+                    "benefits": "Lean protein and light on digestion.",
+                    "type": "Dinner"
+                },
+                {
+                    "name": "Roasted Lamb with Root Vegetables",
+                    "ingredients": ["Lamb", "Sweet Potato", "Pumpkin", "Carrots"],
+                    "benefits": "High protein and nutrient-rich carbohydrates.",
+                    "type": "Dinner"
+                },
+                {
+                    "name": "Weet-Bix with Milk and Fruit",
+                    "ingredients": ["Wheat Biscuits", "Milk", "Banana"],
+                    "benefits": "High fiber breakfast.",
+                    "type": "Breakfast"
+                }
+            ],
+            "local_fruits": ["Kiwi", "Mango", "Pineapple", "Passion Fruit", "Banana"]
+        }
+    },
+    "jobs": {
+        "Sedentary": {
+            "examples": ["Office Worker", "Software Developer", "Driver", "Cashier", "Receptionist"],
+            "description": "Jobs that involve sitting for long periods.",
+            "health_risks": ["Back pain", "Eye strain", "Weight gain", "Poor circulation"],
+            "recommendations": {
+                "exercise": "30-45 minutes of cardio daily (walking, jogging). Stand up and stretch every hour.",
+                "sleep": "7-8 hours. Avoid screens 1 hour before bed.",
+                "diet_focus": "Low calorie density. High fiber to aid digestion. Drink plenty of water to avoid snacking.",
+                "fruit_intake": "2-3 servings daily, preferably as snacks instead of processed food."
+            }
+        },
+        "Active": {
+            "examples": ["Construction Worker", "Farmer", "Athlete", "Warehouse Worker", "Landscaper"],
+            "description": "Jobs that require significant physical effort.",
+            "health_risks": ["Joint pain", "Dehydration", "Physical exhaustion", "Injury"],
+            "recommendations": {
+                "exercise": "Focus on core strengthening and flexibility (Yoga/Pilates) to prevent injury. Rest days are crucial.",
+                "sleep": "8-9 hours to allow muscle recovery.",
+                "diet_focus": "High protein for muscle repair. Complex carbohydrates for sustained energy. Electrolyte-rich fluids.",
+                "fruit_intake": "3-4 servings daily, specifically those high in potassium (e.g., Bananas) for muscle function."
+            }
+        },
+        "Shift Work": {
+            "examples": ["Nurse", "Doctor", "Security Guard", "Factory Worker", "Pilot"],
+            "description": "Jobs with irregular hours or night shifts.",
+            "health_risks": ["Sleep disorders", "Digestive issues", "Chronic fatigue", "Vitamin D deficiency"],
+            "recommendations": {
+                "exercise": "Light to moderate exercise before shift to boost alertness. Cardio on off days.",
+                "sleep": "Use blackout curtains and earplugs. Try to keep a consistent schedule even on off days if possible.",
+                "diet_focus": "Small, frequent meals rather than one large meal. Avoid heavy, greasy foods during night shifts.",
+                "fruit_intake": "Citrus fruits for alertness and immunity."
+            }
+        },
+        "High Stress": {
+            "examples": ["Executive", "Teacher", "Stock Trader", "Emergency Responder"],
+            "description": "Jobs with high mental pressure.",
+            "health_risks": ["Hypertension", "Anxiety", "Heart issues", "Insomnia"],
+            "recommendations": {
+                "exercise": "Stress-busting activities like Boxing, Running, or calming ones like Yoga/Meditation.",
+                "sleep": "7-8 hours. Meditation before sleep is highly recommended.",
+                "diet_focus": "Foods rich in Omega-3 (fish, nuts) for brain health. Avoid excessive caffeine.",
+                "fruit_intake": "Berries (Blueberries, Strawberries) which are high in antioxidants to combat stress."
+            }
+        }
+    }
+}
