@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtn.addEventListener('click', function() {
             darkIcon.classList.toggle('hidden');
             lightIcon.classList.toggle('hidden');
+            themeToggleBtn.setAttribute('aria-pressed', document.documentElement.classList.contains('dark') ? 'false' : 'true');
 
             if (localStorage.getItem('color-theme')) {
                 if (localStorage.getItem('color-theme') === 'light') {
@@ -51,6 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', function() {
             mobileMenu.classList.toggle('hidden');
+            const expanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+            mobileMenuBtn.setAttribute('aria-expanded', String(!expanded));
         });
     }
 

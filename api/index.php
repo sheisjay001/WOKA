@@ -230,14 +230,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <a href="/about" class="hover:text-teal-200 transition-colors font-medium">About</a>
                     <a href="/contact" class="hover:text-teal-200 transition-colors font-medium">Contact</a>
                 </div>
-                <button id="theme-toggle" type="button" class="text-white hover:bg-teal-700/50 rounded-full p-2 transition-all transform hover:scale-110">
+                <button id="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" class="text-white hover:bg-teal-700/50 rounded-full p-2 transition-all transform hover:scale-110 focus:ring-2 focus:ring-white/50">
                     <i id="theme-toggle-dark-icon" class="fas fa-moon hidden"></i>
                     <i id="theme-toggle-light-icon" class="fas fa-sun hidden"></i>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-teal-700 dark:bg-teal-800 pb-4 px-6">
+        <div id="mobile-menu" class="hidden md:hidden bg-teal-700 dark:bg-teal-800 pb-4 px-6" role="menu" aria-label="Mobile navigation">
             <a href="/about" class="block py-2 hover:text-teal-200">About</a>
             <a href="/contact" class="block py-2 hover:text-teal-200">Contact</a>
         </div>
@@ -277,7 +277,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <?php foreach ($continents as $continent): 
                                     $icon = $continentIcons[$continent] ?? 'fa-globe';
                                 ?>
-                                    <div class="continent-card p-3 rounded-xl border-2 border-gray-100 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 cursor-pointer bg-gray-50 dark:bg-gray-700/50 transition-all flex flex-col items-center justify-center gap-2 group" onclick="selectContinent('<?= e($continent) ?>', this)">
+                                    <div class="continent-card p-3 rounded-xl border-2 border-gray-100 dark:border-gray-700 hover:border-teal-500 dark:hover:border-teal-400 cursor-pointer bg-gray-50 dark:bg-gray-700/50 transition-all flex flex-col items-center justify-center gap-2 group" role="button" tabindex="0" aria-label="Select <?= e($continent) ?>" onclick="selectContinent('<?= e($continent) ?>', this)" onkeydown="if(event.key==='Enter'||event.key===' '){selectContinent('<?= e($continent) ?>', this)}">
                                         <i class="fas <?= $icon ?> text-2xl text-gray-400 group-hover:text-teal-500 transition-colors"></i>
                                         <span class="text-xs font-medium text-center"><?= e($continent) ?></span>
                                     </div>
@@ -291,17 +291,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div>
                             <label for="job" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Profession</label>
                             <div class="relative">
-                                <select name="job" id="job" class="w-full p-4 pl-10 border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl focus:ring-2 focus:ring-teal-500 focus:outline-none appearance-none transition-shadow shadow-sm" required>
-                                    <option value="">Select your role...</option>
+                                <input list="job-list" name="job" id="job" class="w-full p-4 pl-10 border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl focus:ring-2 focus:ring-teal-500 focus:outline-none transition-shadow shadow-sm" placeholder="Type to search your role..." required />
+                                <datalist id="job-list">
                                     <?php foreach ($jobTypes as $type): ?>
-                                        <option value="<?= e($type) ?>" <?= $selectedJob === $type ? 'selected' : '' ?>><?= e($type) ?></option>
+                                        <option value="<?= e($type) ?>"></option>
                                     <?php endforeach; ?>
-                                </select>
+                                </datalist>
                                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
                                     <i class="fas fa-briefcase"></i>
-                                </div>
-                                <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-gray-400">
-                                    <i class="fas fa-chevron-down text-xs"></i>
                                 </div>
                             </div>
                         </div>
